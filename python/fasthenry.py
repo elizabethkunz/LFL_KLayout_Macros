@@ -121,5 +121,5 @@ class FastHenryFile():
 
     def call_fastHenry(self):
       with Popen(["fasthenry", self.path], stdout=PIPE, bufsize=1, universal_newlines=True) as p:
-      for line in p.stdout:
-          print(line, end='')
+          for line in p.stdout:
+              print(line, end='')
