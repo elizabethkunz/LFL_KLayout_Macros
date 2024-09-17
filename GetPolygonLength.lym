@@ -62,7 +62,9 @@ else:
 
                     # Add the length of the edge to the total length
                     total_length += edge.length()* layout.dbu  # convert to microns
+                    adjusted_length = total_length / 2
 
-        print("Total length:", total_length, "microns")
+        print("Total length:", adjusted_length, "microns")
+
 </text>
 </klayout-macro>
